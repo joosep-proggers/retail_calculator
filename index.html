@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Retail Calculator</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+
+		<!-- Inputs -->
+
+		<div class="quantity">
+			<p>Quantity of items: </p>
+			<input type="number" name="quantity" min="0" id="quantityInput">
+		</div>
+		<div class="price">
+			<p>Price of items: </p>
+			<input type="number" name="price" min="0" id="priceInput">
+		</div>
+
+		<!-- Discount table -->
+
+		<div class="discountTable">
+			<table>
+				<thead>
+					<tr>
+						<th class="tableHead">Order value</th>
+						<th class="tableHead">Discount rate</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>$1,000</td>
+						<td>3%</td>
+					</tr>
+					<tr>
+						<td>$5,000</td>
+						<td>5%</td>
+					</tr>
+					<tr>
+						<td>$7,000</td>
+						<td>7%</td>
+					</tr>
+					<tr>
+						<td>$10,000</td>
+						<td>10%</td>
+					</tr>
+					<tr>
+						<td>$50,000</td>
+						<td>15%</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- State dropdown -->
+
+		<div class="dropdown">
+			<label class="stateText" for="state">State:</label>
+			<select name="state" id="state">
+				<option value="5.60">AZ | 5.60%</option>	
+				<option value="4.00">AL | 4.00%</option>
+				<option value="5.60">AZ | 5.60%</option>
+				<option value="6.50">AR | 6.50%</option>
+				<option value="7.25">CA | 7.25%</option>
+				<option value="6.00">IA | 6.00%</option>
+				<option value="2.90">CO | 2.90%</option>
+				<option value="6.00">CT | 6.00%</option>
+				<option value="6.00">FL | 6.00%</option>				
+				<option value="6.00">ID | 6.00%</option>
+				<option value="6.25">IL | 6.25%</option>				
+				<option value="7.00">IN | 7.00%</option>
+				<option value="6.25">MA | 6.25%</option>
+				<option value="6.00">MD | 6.00%</option>
+				<option value="6.00">IA | 6.00%</option>
+				<option value="4.45">LA | 4.45%</option>
+				<option value="5.50">ME | 5.50%</option>
+				<option value="6.00">MD | 6.00%</option>
+				<option value="6.25">MA | 6.25%</option>
+				<option value="6.00">MI | 6.00%</option>
+				<option value="6.88">MN | 6.88%</option>
+				<option value="8.00">NV | 8.00%</option>
+				<option value="6.00">PA | 6.00%</option>
+				<option value="6.00">SC | 6.00%</option>
+				<option value="6.25">TX | 6.25%</option>
+				<option value="6.85">UT | 6.85%</option>
+				<option value="6.00">VT | 6.00%</option>
+			</select>
+		</div>
+
+		<!-- Calculation button and results -->
+
+		<button type="button" id="calculateBtn">Calculate</button>
+		<div class="total">
+			<p id="totalRaw">Without taxes and discounts: <span id="totalRawValue"></span></p>
+			<p id="discount">Total gotten discount: <span id="discountValue"></span></p>
+			<p id="total">Total: <span id="totalValue"></span></p>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+
+	<script src="app.js"></script>
+</body>
+</html>

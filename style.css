@@ -1,0 +1,83 @@
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	background-color: rgb(192, 215, 247);
+}  
+.container {
+	display: grid;
+	width: 700px;
+	margin: 30px auto;
+	padding: 100px 0;
+	background-color: aliceblue;
+	justify-content: center;
+	gap: 50px 100px;
+}
+
+.quantity {
+	margin: auto;
+} 
+
+.price {
+	margin: auto;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+} 
+
+.dropdown {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	margin: auto;
+	display: grid;
+} 
+
+p{
+	font-size: 23px;
+	margin: 5px 0;
+} 
+
+.discountTable {
+	margin: auto;
+	background-color: white;
+} 
+
+table, th, tr, td {
+	border: 1px solid;
+	padding: 3px 5px;
+}
+
+.tableHead{
+	font-weight: 600;
+	font-size: 17px;
+} 
+
+table{
+	border-collapse: collapse;
+} 
+
+.stateText{
+	font-size: 23px;
+	margin: 5px 0;
+} 
+
+.total {
+	background-color: white;
+	width: 250px;
+} 
+
+#totalRaw,
+#discount {
+	font-size: 18px;
+} 
+#total,
+#totalRaw,
+#discount {
+	margin: 15px;
+} 
+
+#calculateBtn {
+	padding: 5px;
+	margin: auto;
+	height: 50px;
+	width: 150px;
+	font-size: 20px;
+} 
